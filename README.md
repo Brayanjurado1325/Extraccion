@@ -16,6 +16,7 @@ Para la extracción de los datos de información térmica, se usa un algoritmo e
 
 ### Creacion de Mascara y extracccion de datos 
 La variable que guarda la imagen termica (Tambien podria usarse la imagen RGB de referencia) se denomica Tem, para poder crear la mascara se usa las siguientes lineas de codigo, abriendo una figura donde se creara el borde de la figura de manera manual.
+
    `figure`
    `mascara = roipoly(Tem);`
    `mascara = imcomplement(mascara);`
