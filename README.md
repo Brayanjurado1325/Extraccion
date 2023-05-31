@@ -22,7 +22,7 @@ La variable que guarda la imagen termica (Tambien podria usarse la imagen RGB de
    `mascara = imcomplement(mascara);`  
    `imshow(mascara);`  
   
-El resultado de se refleja en la ariable mascara, una matriz binaria de 480x64. 
+El resultado de se refleja en la variable mascara, una matriz binaria de 480x64. 
 
 ![Creacion de Mascara](https://github.com/Brayanjurado1325/Extraccion/blob/main/Imagenes/seleccionMas.png)
 
@@ -40,9 +40,7 @@ Debido a la gran candida de puntos se usa la funcion `Data_muestra= datasample(D
 
 ### Segmentacion de datos 
 
-
-
-
+![Muestreo de datos](https://github.com/Brayanjurado1325/Extraccion/blob/main/Imagenes/clusterpanicula.png)
 
 
 
