@@ -40,6 +40,8 @@ Debido a la gran candida de puntos se usa la funcion `Data_muestra= datasample(D
 
 ### Segmentacion de datos 
 
+El algoritmo hace la clasificacion con me metodo de k-vecinos seccionando la panicula en 3 partes y dando un valor para cada seccion que debe registrarse de manera manual.
+
 ![Muestreo de datos](https://github.com/Brayanjurado1325/Extraccion/blob/main/Imagenes/clusterpanicula.png)
 
 
