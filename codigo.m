@@ -6,9 +6,8 @@ Tem = imread('FLIR1432.jpg');
 
 % CARGAR CSV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-M = randi([20 30],480,640);
-figure
-imshow(M)
+M = csvread('FLIR1432.csv');
+
 
 % CREAR MASCARA 
 figure
@@ -54,7 +53,7 @@ figure
 scatter(x,y,z)
 
 % Agrupar en 3 partes 
-X =  Data_muestra(:,1:2);
+X =  Data_muestra(:,1:2)/200;
 rng(1); 
 [idx,C] = kmeans(X,3);
 
@@ -70,13 +69,9 @@ gscatter(XGrid(:,1),XGrid(:,2),idx2Region,...
     [0,0.75,0.75;0.75,0,0.75;0.75,0.75,0],'..');
 hold on;
 plot(X(:,1),X(:,2),'k*','MarkerSize',5);
-title 'Fisher''s Iris Data';
-xlabel 'Petal Lengths (cm)';
-ylabel 'Petal Widths (cm)'; 
+title 'Agrupación de las regiones de la panícula';
 legend('Region 1','Region 2','Region 3','Data','Location','SouthEast');
 hold off;
 
 
 % Obtener promedio por cada parte  
-
-% Identificar cada parte  
