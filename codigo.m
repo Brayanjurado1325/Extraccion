@@ -117,9 +117,9 @@ gscatter(XGrid(:,1),XGrid(:,2),idx2Region,...
     [0,0.75,0.75;0.75,0,0.75;0.75,0.75,0],'..');
 hold on;
 plot(X(:,1),X(:,2),'k*','MarkerSize',5);
-title 'Fisher''s Iris Data';
-xlabel 'Petal Lengths (cm)';
-ylabel 'Petal Widths (cm)'; 
+title 'Extraccion de datos por secciones';
+xlabel 'Eje vertical';
+ylabel 'Eje Horizontal'; 
 legend(R1,R2,R3,'Data','Location','SouthEast');
 hold off;
 
