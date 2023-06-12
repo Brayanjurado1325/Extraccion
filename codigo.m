@@ -6,7 +6,7 @@ Tem = imread('FLIR1432.jpg');
 
 % CARGAR CSV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-M = readmatrix('FLIR1432.csv','Range','B2:E3');% EL rango debe adaptarse a los cv de FLuke 
+M = readmatrix('IR_00070.csv','Range','B2:XQ481');% EL rango debe adaptarse a los cv de FLuke 
 
 
 % CREAR MASCARA 
