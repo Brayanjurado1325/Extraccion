@@ -8,6 +8,23 @@
 
 
 ### Datos de entrada 
+La lectura de los datos en formato tabla (Excel, csv o txt) se hace en la linea 9 usando la funcion readmatrix.
+
+Si los datos inician en la celda A1 no es necesario especificar un rango por lo que suponiendo que el archivo se llama Data.csv se deberia usar
+
+
+```ruby
+M = readmatrix('Data.csv');
+```
+
+En caso de que los datos se encuentren en otra seccion del archivo es necesario especificar el rango, por ejemplo en el siguiente caso los datos empiezan en la celda B2, esto puede pasar cuando las imagenes tienen etiquetas entonces la matriz con la informacion termica se mueve. 
+
+```ruby
+M = readmatrix('Data.csv','Range','B2:XQ481');
+```
+
+_Nota: Se debe configurar la separacion decimal como punto(.)_
+
 Para la extracción de los datos de información térmica, se usa un algoritmo en Matlab que tiene como insumos las Imágenes Térmicas, RGB y el Excel con los valores térmicos, la imagen tiene un tamaño de 480x640, equivalente al tamaño de la matriz del archivo csv, la imagen termica se carga usando la funcion `imread` 
 
 ![Imagen Termica](https://github.com/Brayanjurado1325/Extraccion/blob/main/Imagenes/ImTer.png)
